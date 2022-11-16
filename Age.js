@@ -1,4 +1,5 @@
 
+
 //FUNCTION FOR SUBMITTING
 // accessing all input IDs
 const bdate = document.getElementById("date");
@@ -51,19 +52,20 @@ function Calculate() {
     //Calculating result
 
     if (td < bd) {
-      para_one.innerHTML = td - bd + 30 + " days.";
+      para_one.innerHTML = td - bd + 30 + " days";
       tm = tm - 1;
     } else {
-      para_one.innerHTML = td - bd + " days.";
+      para_one.innerHTML = td - bd + " days";
     }
 
     if (tm < bm) {
-      para_two = tm - bm + 12 + " months, and";
+      para_two.innerHTML = tm - bm + 12 + " months";
       ty = ty - 1;
     } else {
-      para_two.innerHTML = tm - bm + " months, and";
+      para_two.innerHTML = tm - bm + " months";
     }
-    const yearss = "" + (ty - by) + " years";
+
+    const yearss = "" + (yyyyyy - by) + " years";
 
     //accessing para tag
     para.innerHTML = `Your age is ${yearss},`;
