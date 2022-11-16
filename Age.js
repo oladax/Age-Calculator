@@ -1,3 +1,4 @@
+
 //FUNCTION FOR SUBMITTING
 // accessing all input IDs
 const bdate = document.getElementById("date");
@@ -8,6 +9,7 @@ const para = document.getElementById("PARA");
 const para_one = document.getElementById("PARA1");
 const para_two = document.getElementById("PARA2");
 
+//Deleting all inputs
 function Delete() {
   para_two.innerHTML = "";
   para_one.innerHTML = "";
@@ -21,6 +23,8 @@ function Calculate() {
   if (bdate.value == "" || bmonth.value == "" || byear.value == "") {
     alert("Please,none of the fields can be left empty!");
   } else if (bdate.value >= 32 || bmonth.value >= 13 || byear.value >= 2023) {
+    alert("Please, kindly enter your date of birth appropriately.");
+  } else if (bdate.value <= 0 || bmonth.value <= 0 || byear.value <= 1009) {
     alert("Please, kindly enter your date of birth appropriately.");
   } else {
     // current day, month, time
